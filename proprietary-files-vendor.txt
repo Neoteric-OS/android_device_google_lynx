@@ -10,12 +10,14 @@ vendor/bin/hw/android.hardware.biometrics.face-service-lynx
 vendor/bin/hw/android.hardware.biometrics.fingerprint-service.goodix
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hw/android.hardware.confirmationui@1.0-service.trusty.vendor
+vendor/bin/hw/android.hardware.contexthub-service.generic
 vendor/bin/hw/android.hardware.drm-service.widevine
 vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging
 vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging
 vendor/bin/hw/android.hardware.identity@1.0-service.citadel
 vendor/bin/hw/android.hardware.input.processor-service
 vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl
+vendor/bin/hw/android.hardware.nfc-service.st
 vendor/bin/hw/android.hardware.secure_element@1.2-uicc-service
 vendor/bin/hw/android.hardware.security.keymint-service.citadel
 vendor/bin/hw/android.hardware.weaver@1.0-service.citadel
@@ -154,6 +156,7 @@ vendor/etc/init/android.hardware.biometrics.face-service-lynx.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/etc/init/android.hardware.camera.provider@2.7-service-google-apex.rc
 vendor/etc/init/android.hardware.confirmationui@1.0-service.trusty.vendor.rc
+vendor/etc/init/android.hardware.contexthub-service.generic.rc
 vendor/etc/init/android.hardware.drm-service.widevine.rc
 vendor/etc/init/android.hardware.edgetpu.logging@service-edgetpu-logging.rc
 vendor/etc/init/android.hardware.gxp.logging@service-gxp-logging.rc
@@ -162,6 +165,7 @@ vendor/etc/init/android.hardware.input.processor-service.rc
 vendor/etc/init/android.hardware.neuralnetworks@service-darwinn-aidl.rc
 vendor/etc/init/android.hardware.secure_element@1.2-uicc-service.rc
 vendor/etc/init/android.hardware.security.keymint-service.citadel.rc
+vendor/etc/init/android.hardware.thermal@2.0-service.pixel.rc
 vendor/etc/init/android.hardware.weaver@1.0-service.citadel.rc
 vendor/etc/init/aocd.rc
 vendor/etc/init/bipchmgr.rc
@@ -180,6 +184,7 @@ vendor/etc/init/init_citadel.rc
 vendor/etc/init/libg3a_gabc.rc
 vendor/etc/init/libg3a_gaf.rc
 vendor/etc/init/libg3a_ghawb.rc
+vendor/etc/init/nfc-service-default.rc
 vendor/etc/init/pktrouter.rc
 vendor/etc/init/rfsd.rc
 vendor/etc/init/rild_exynos.rc
@@ -228,9 +233,11 @@ vendor/etc/twoshay_config.json
 vendor/etc/vintf/manifest/android.hardware.biometrics.face-service-lynx.xml
 vendor/etc/vintf/manifest/android.hardware.camera.provider@2.7-service-google-apex.xml
 vendor/etc/vintf/manifest/android.hardware.confirmationui@1.0-service.trusty.vendor.xml
+vendor/etc/vintf/manifest/android.hardware.contexthub-service.generic.xml
 vendor/etc/vintf/manifest/android.hardware.identity.strongbox.xml
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@service-darwinn-aidl.xml
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service.citadel.xml
+vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.pixel.xml
 vendor/etc/vintf/manifest/android.hardware.weaver@1.0-service.citadel.xml
 vendor/etc/vintf/manifest/dmd.xml
 vendor/etc/vintf/manifest/fingerprint-goodix.xml
@@ -238,6 +245,7 @@ vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml
 vendor/etc/vintf/manifest/manifest_input.processor-service.xml
 vendor/etc/vintf/manifest/manifest_radioext.xml
 vendor/etc/vintf/manifest/manifest_wifi_ext.xml
+vendor/etc/vintf/manifest/nfc-service-default.xml
 vendor/etc/vintf/manifest/vendor.google.edgetpu_vendor_service@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.google.google_battery-default.xml
 vendor/etc/vintf/manifest/vendor.google.wireless_charger@1.3-service-vendor.xml
@@ -1133,6 +1141,7 @@ vendor/lib/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so
 vendor/lib/vendor.samsung_slsi.telephony.hardware.radioExternal@1.1.so
 vendor/lib64/android.hardware.authsecret@1.0-impl.nos.so
 vendor/lib64/android.hardware.confirmationui.secure_input_citadel.so
+vendor/lib64/android.hardware.contexthub-V1-ndk.so
 vendor/lib64/android.hardware.identity@1.0-impl.nos.so
 vendor/lib64/android.hardware.keymaster@4.1-impl.nos.so
 vendor/lib64/android.hardware.oemlock@1.0-impl.nos.so
