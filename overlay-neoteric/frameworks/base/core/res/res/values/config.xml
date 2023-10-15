@@ -16,4 +16,7 @@
 
 <resources>
     <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>
+
+    <!-- Whether device has screen with higher aspect ratio -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
 </resources>
