@@ -76,6 +76,9 @@ PRODUCT_PACKAGES += \
     android.hardware.identity-support-lib.vendor:64 \
     android.hardware.identity_credential.xml
 
+# ESIM
+HAS_ESIM := true
+
 # Nos
 PRODUCT_PACKAGES += \
     libkeymaster4support.vendor:64 \
